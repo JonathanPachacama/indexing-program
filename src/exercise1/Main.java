@@ -43,13 +43,10 @@ public class Main {
 	                texDoc = doc.getText();
 	                StringTokenizer tokens = new StringTokenizer(texDoc, " ");
 	                while (tokens.hasMoreTokens()) {
-	                  //  System.out.println("while");
+	                 
 	                    str = tokens.nextToken();
 	                    if (objsDocs.size() > 0) {
 	                        for (int i = 0; i<objsDocs.size(); i++) {
-
-	                            //System.out.println(objsDocs.get(i).getPalabra() + " "+ str);
-	                            //System.out.println(objsDocs.size());
 
 	                            if (objsDocs.get(i).getPalabra().equals(str)) {
 	                                System.out.println("Entro");
@@ -65,7 +62,6 @@ public class Main {
 	                                break;
 	                            }
 
-
 	                        }
 	                    }else{
 	                        objdt.setPalabra(str);
@@ -76,24 +72,8 @@ public class Main {
 	                }
 	            }
 
-
 	            System.out.println(objsDocs.size() + "\n" + objsDocs.get(3).getPalabra());
-
-	          /*          if (!listWords.contains(str)) {
-	                        listWords.add(str);
-	                        objdt.setPalabra(str);
-	                    }
-	                    listWordsRep.add(str);
-	                }
-	            }
-
-	            Collections.sort(listWords);
-	            for (int i =0; i<listWordsRep.size(); i++){
-	                System.out.println(listWordsRep.get(i));
-	            }*/
-
-
-
+	    
 	        } catch(JDOMException e) {
 	            e.printStackTrace();
 	        } catch(IOException ioe) {
