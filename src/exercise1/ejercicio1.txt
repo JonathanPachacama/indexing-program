@@ -1,0 +1,16 @@
+<?xml version = "1.0"?>
+<class>
+<doc><docno>d1</docno>Please Please Me</doc>
+<doc><docno>d2</docno>A Day in the Life</doc>
+<doc><docno>d3</docno>A Hard Day is Night</doc>
+<doc><docno>d4</docno>Long Long Long</doc>
+<doc><docno>d5</docno>The Long and Winding Road</doc>
+<doc><docno>d6</docno>Love Me Do</doc>
+<doc><docno>d7</docno>Love You To</doc>
+<doc><docno>d8</docno>Please Mr Postman</doc>
+</class>
+
+
+
+
+

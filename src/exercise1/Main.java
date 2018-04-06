@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            File inputFile = new File("D:/OneDrive - Escuela Politécnica Nacional/Curso Information Retriviel/indexing-program/src/exercise1/09-Text_Only-Ascii-Coll-2001-5000-NoSem.txt");
+            File inputFile = new File("D:/OneDrive - Escuela Politécnica Nacional/Curso Information Retriviel/indexing-program/src/exercise1/document.txt");
             SAXBuilder saxBuilder = new SAXBuilder();
             Document document = saxBuilder.build(inputFile);
             Element classElement = document.getRootElement();
@@ -33,7 +33,7 @@ public class Main {
                 texDoc = doc.getText();
                 StringTokenizer tokens = new StringTokenizer(texDoc, " " + "’"+ "\n");
                 while (tokens.hasMoreTokens()) {
-                    docsMap = new HashMap<>();
+                    docsMap = new TreeMap<>();
                     cont = 0;
                     str = tokens.nextToken().toLowerCase();
                     if (str.equals("s")) str = "is";
